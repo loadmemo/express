@@ -12,9 +12,9 @@ docker run -d --name express -p 9090:80 express
 ```
 docker pull zikloa/express
 # run with KEY
-docker run -d --name express -e KEY="1234567890" -p 9090:80 express
+docker run -d --name express -e KEY="1234567890" -p 9090:80 zikloa/express
 # run wihout KEY
-docker run -d --name express -p 9090:80 express
+docker run -d --name express -p 9090:80 zikloa/express
 ```
 
 ---
