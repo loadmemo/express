@@ -1,4 +1,4 @@
-# express
+# Express api service for Kuaidi100
 ### Run from source
 ```
 git clone https://github.com/loadmemo/express.git
