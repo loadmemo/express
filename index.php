@@ -14,9 +14,9 @@ require_once("include/Kuaidi100.class.php");
 $postdata = array_map('htmlspecialchars', $getdata);
 $key = getenv('KEY');
 if (empty($postdata['sn']) || empty($postdata['code'] || empty($postdata['key'])))
-    $result = array('status' => 0, 'info' => '参数错误');
+    $result = array('status' => 0, 'message' => '参数错误');
 else if (strlen($key) && $postdata['key'] != $key) {
-    $result = array('status' => 0, 'info' => 'key错误');
+    $result = array('status' => 0, 'message' => 'key错误');
 } else {
     $kd = new Kuaidi100();
     $result = $kd->search($postdata);

@@ -74,7 +74,7 @@ class Kuaidi100
                 $return['status'] = 1;
             } else {
                 $return['status'] = 0;
-                $return['info'] = $result['message'] ? $result['message'] : '查询失败';
+                $return['message'] = $result['message'] ? $result['message'] : '查询失败';
             }
             return $return;
         }
